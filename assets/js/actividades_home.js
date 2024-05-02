@@ -3,6 +3,7 @@
 const url_h = 'https://www.fundacionamigosdejesus.org/funaje/';
 const url = 'http://localhost/funaje/';
 
+
 const data_actividades_cards = document.getElementById('data_actividades_cards');
 
 function listar_actividades() {
