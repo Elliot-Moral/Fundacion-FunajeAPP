@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/reglas_nav_banner.css">
+        <link rel="stylesheet" href="assets/css/contacto.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+
+
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!-- ========= Favicon ========== -->
+
+        <link rel="shortcut icon" type="image/jpg" href="assets/icons/fabicon.png"/>
+
+        <title>Contactanos - Fundación Para La Niñez | Funaje</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <img src="assets/icons/mini_logo_funaje.png" alt="" height="40px" width="40px">
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="home" class="nav__link ">QUIENES SOMOS</a></li>
+                        <li class="nav__item"><a href="conocenos" class="nav__link ">CONOCENOS</a></li>
+
+                        <li class="nav__item nav_horizontal">
+                            <span class="nav__link">PROGRAMAS</span>
+
+                            <ul class="nav__item programas_nav">
+                                <li class="programas_nav_li "><a href="soyimportante" class="nav__link link_program">Soy Importante</a></li>
+                                <li class="programas_nav_li"><a href="saludybienestar" class="nav__link link_program">Salud Y Bienestar</a></li>
+                                <li class="programas_nav_li"><a href="habilidades" class="nav__link link_program">Habilidades</a></li>
+                                <li class="programas_nav_li"><a href="soyutil" class="nav__link link_program">Soy Util</a></li>
+                            </ul>
+       
+                        </li>
+                        <li class="nav__item"><a href="agenda" class="nav__link">AGENDA</a></li>
+                        <li class="nav__item"><a href="contacto" class="nav__link active">CONTACTO</a></li>
+                        <li class="nav__item"><a href="login" class="nav__link"><i class='uil uil-user'></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+          <!--==================== HOME ====================-->
+            <section class="home " id="home">
+
+                <div class="home__container">
+                    <div class="home__info">
+                        <h1>Soy importante para Dios</h1>
+                        <p>Con el poder del amor, transformamos pequeñas vidas, sembrando semillas de esperanza y nutriendo corazones con bondad infinita. Juntos, creamos un mundo donde cada gesto cuenta y cada sonrisa marca la diferencia. Únete a nosotros en este viaje de cambio y compasión.</p>
+                        <div class="home__butoms">
+                            <a class="home__apoyar" href="apoyar">Quiero Apoyar</a>
+                        </div>
+                    </div>
+                </div>
+              
+            </section>
+
+             <!--============== UBICANOS ==============-->
+            <!--=============== FORMULARIO ============-->
+            <section class="contact section" id="contactenos">
+                <h2 class="section-title">Contactanos</h2>
+                <!-- <span class="section__subtitle">Nuestra Información</span> -->
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__content-info">
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Telefonos Celular</h3>
+                                <p class="contact__subtitle">" Fijo - 6738343"</p>
+                                <p class="contact__subtitle">+57 313 395 76 93</p>
+                                <p class="contact__subtitle">+57 313 807 72 36</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Correo Electronico</h3>
+                                <p class="contact__subtitle">fundacionamigosdejesus@hotmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Ubucación</h3>
+                                <p class="contact__subtitle">Villavicencion - Meta - Colombia | Calle 63 No. 45-56 Barrio Porfía</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form  id="form_contact" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="nombre" class="contact__label">Nombre | Name:</label>
+                                <input id="in_nombre" name="nombre" type="text" class="contact__input" required>
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="correo" class="contact__label">Correo Electronico | Email:</label>
+                                <input id="in_correo" name="correo" type="email" class="contact__input" required>
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="celular" class="contact__label">Celular | Phone</label>
+                                <input id="in_celular" name="celular" type="text" class="contact__input" required>
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="pais" class="contact__label">Pais | Country</label>
+                                <input id="in_pais" name="pais" type="text" class="contact__input" required>
+                            </div>  
+
+                            <div class="contact__content">
+                                <label for="mensaje" class="contact__label">Mensaje: | Massage</label>
+                                <textarea id="in_mensaje" name="mensaje" id="" cols="0" rows="7" class="contact__input" required></textarea>
+                            </div>
+
+                            <div>
+                                <a id="btn_send" class="button button--flex button_form">
+                                    Enviar
+                                    <i class="uil uil-message button_icon"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="about section " id="about">
+                <h2 class="section-title">Ubicanos</h2>
+
+                <!-- <div class="about__container bd-grid"></div> -->
+                <div class="container bd-grid">
+                    <iframe class="container__ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.71381047049!2d-73.67433938573718!3d4.078593247874287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e30141025e541%3A0xe851913a9d6e277!2sCl.%2063%20Sur%20%2345-56%2C%20Villavicencio%2C%20Meta!5e0!3m2!1ses-419!2sco!4v1642014875186!5m2!1ses-419!2sco" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__img">
+                    <img src="assets/icons/Logo_amigos_de_Jesus.png" alt="">
+                </div>
+                <div class="footer__link">
+                    <a href="conocenos">Conocenos</a>
+                    <a href="">Nuestros Programas</a>
+                    <a href="documentos">Documentos legales</a>
+                    <a href="contacto">Contactanos</a>
+                    <ul class="footer__lista">
+                        <li>"Fijo - 6738343"</li>
+                        <li>+57 313 395 76 93</li>
+                        <li>+57 313 807 72 36</li>                
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/funajee" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__icon"><i class='bx bxl-youtube' ></i></a>
+                </div>
+                <p class="footer_copy">&#169; copyright Todos Los Derechos Reservados. 2019 - <span id="yeard_current"></span></p>
+            </div>
+
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/helpers.js"></script>
+        <script src="assets/js/contacto.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

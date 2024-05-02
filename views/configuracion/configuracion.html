@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/reglas_nav_banner.css">
+    <link rel="stylesheet" href="assets/css/configuracion.css">
+    <link rel="stylesheet" href="assets/css/actividades.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ========= Favicon ========== -->
+
+    <link rel="shortcut icon" type="image/jpg" href="assets/icons/fabicon.png" />
+
+    <title>Configuracion - Fundación Para La Niñez | Funaje</title>
+    <style>
+
+    </style>
+</head>
+
+<body">
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <img src="assets/icons/mini_logo_funaje.png" alt="" height="40px" width="40px">
+                <!-- <span style="color: aliceblue;">Bienvenido Ingeniero Andres</span> -->
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="login" class="nav__link"><i class='uil uil-user'></i></a></li>
+                    <li class="nav__item"><a href="login" class="nav__link">Salir</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--==================== HOME ====================-->
+        <!--===== About =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">Configuracion</h2>
+
+            <div class="about__container bd-grid ">
+
+
+                <div class="about__card">
+                    <h3>Actividades</h3>
+                    <p>Aquí se van añadiendo las actividades y eventos importante del mes, se mostrar en la página PRINCIPAL.
+                    </p>
+                </div>
+
+                <div class="about__card">
+                    <h3>Agenda</h3>
+                    <p>Aquí se van añadiendo los eventos por suceder a lo largo del mes, se mostrar en la página AGENDA.
+                    </p>
+                </div>
+
+                <div class="about__card">
+                    <h3>Donaciones</h3>
+                    <p>Aquí se van añadiendo la información de los donantes, así como lo que se ha recaudado.</p>
+                </div>
+
+
+            </div>
+
+            <!-- //ventana de AGENDA -->
+            <div class="fondo__modal" id="modal">
+                <div class="container_modal">
+
+                    <div id="ventana_modal" class="about__modal">
+
+                        <!-- MODAL 1 -->
+                        <div id="modal_1" class="modal_1 modal_activo">
+
+                            <h2 id="titleModal">Agenda</h2>
+                            <hr>
+
+                            <table class="table">
+
+                                <thead class="table__head">
+                                    <tr>
+                                        <th>N.</th>
+                                        <th>Titulo</th>
+                                        <th>Des</th>
+                                        <th>Dia</th>
+                                        <th>Mes</th>
+                                        <th>Imagen</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="datos_tabla">
+                                </tbody>
+
+                            </table>
+                            
+                            <hr>
+
+                            <div class="botones__crud">
+                                <img src="" alt="">
+                                <button id="bnt_add" class="crud__bnt">Agregar</button>
+                                <button id="bnt_update" class="crud__bnt">Editar</button>
+                                <button id="bnt_delete" class="crud__bnt">Eliminar</button>
+                            </div>
+                            <button class="modal_btn_cerrar" id="btn_modal">Cerrar</button>
+                        </div>
+
+
+                        <!-- MODAL 2 -->
+                        <div id="modal_2" class="modal_2">
+                            <h2 id="action_modal">Agregar Nuevo Evento</h2>
+                            <hr>
+
+                            <form action="">
+                                <label for="">Título:</label>
+                                <input id="in_tit" class="modal2_input" type="text" required>
+                                <br>
+                                <label for="">Descripción:</label>
+                                <input  id="in_desc" class="modal2_input" type="text" required>
+                                <br>
+                                <label for="">Día:</label>
+                                <input id="in_dia" class="modal2_input" type="number" required>
+                                <br>
+                                <label for="">Mes:</label>
+                                <input id="in_mes" class="modal2_input" type="number" required>
+
+                                <div id="montrar_imagen" class="modal2_montrar_imge ">
+                                    <!-- montrar_imagen -->
+                                    <img id="img_update" src="media/agenda/cometas.jpg" alt="">
+                                </div>
+
+                                <div class="div_file">
+                                    <p class="div_text">Subir Imagen</p>
+                                    <input id="in_file" class="bnt_file" type="file" required>
+                                </div>
+                                <div>
+                                    <button id="btn_modal2_cerrar"
+                                        class="crud__bnt bnt_modal_2 modal_2_cerrar">Cancelar</button>
+                                    <input type="submit" id="btn_modal2_guardar" class="crud__bnt bnt_modal_2" value="Guardar">
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- //VENTANA ACTIVIDADES -->
+            <div class="fondo__modal" id="modal_actidades">
+                <div class="container_modal">
+                    <div id="ventana_modal_act" class="about__modal">
+
+                        <!-- MODAL 1 -->
+                        <div id="modal_1_act" class="modal_1 modal_activo">
+                            <h2>Actividades del mes</h2>
+                            <hr>
+                            <table class="table modal_acti_container_data" >
+                                <thead>
+                                    <td>N.</td>
+                                    <td>Titulo</td>
+                                    <td>Descripción</td>
+                                    <td>Imagen</td>
+                                </thead>
+                                <tbody id="data_actividades"></tbody>
+                            </table>
+                            <hr>
+                            <div class="botones__crud">
+                                <img src="" alt="">
+                                <button id="bnt_add_acti" class="crud__bnt">Agregar</button>
+                                <button id="bnt_update_acti" class="crud__bnt">Editar</button>
+                                <button id="bnt_delete_acti" class="crud__bnt">Eliminar</button>
+                            </div>
+                            <button class="modal_btn_cerrar" id="btn_modal_acti">Cerrar</button>
+                        </div>
+
+                        <!-- MODAL 2 -->
+                        <div id="modal_2_act" class="modal_2">
+                            <h2 id="action_modal_act">Agregar Nuevo Evento</h2>
+                            <hr>
+
+                            <form action="" id="data_form_act">
+                                <label for="">Título:</label>
+                                <input id="in_tit_act" name="titulo_act" class="modal2_input" type="text" required>
+                                <br>
+                                <label for="">Descripción:</label>
+                                <textarea id="in_desc_act"  name="desc_act" class="modal2_input text_area" type="text" required ></textarea>
+                                <br>
+                                <label for="">Imagen:</label>
+                                <div id="montrar_imagen_act" class="modal2_montrar_imge ">
+                                    <!-- montrar_imagen -->
+                                    <img id="img_update_act" src="media/agenda/cometas.jpg" alt="">
+                                </div>
+
+                                <div class="div_file">
+                                    <p class="div_text">Subir Imagen</p>
+                                    <input id="in_file_act"  name="file_act" class="bnt_file" type="file" required>
+                                </div>
+                                <div>
+                                    <button id="btn_modal2_cerrar_act" class="crud__bnt bnt_modal_2 modal_2_cerrar">Cancelar</button>
+                                    <input type="submit" id="btn_modal2_guardar_act" class="crud__bnt bnt_modal_2" value="Guardar">
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer_copy">&#169; copyright Todos Los Derechos Reservados. 2019 - <span id="yeard_current"></span></p>
+        </div>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/helpers.js"></script>
+    <script src="assets/js/configuracion.js"></script>
+
+    </body>
+
+</html>
